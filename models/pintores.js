@@ -23,3 +23,5 @@ let PintoresSchema = new Schema({
     }
     
 });
+
+module.exports = mongoose.model('Pintores', PintoresSchema);

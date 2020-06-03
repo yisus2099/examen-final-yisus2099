@@ -15,8 +15,20 @@ hbs.registerPartials(__dirname+'/views/partials');
 app.use(express.static(__dirname+'/public'));
 
 //Ruta 
-app,use('/', pintoresRouter);
+app.use('/', pintoresRouter);
 
 //Conexion con MongoDB
 mongoose.Promise = global.Promise;
-const cadena = 'nuestra cadena de conexion de mongo'
+const cadena = 'mongodb+srv://theBatman_2020:batinson@torresjesus-qflpq.mongodb.net/<dbname>?retryWrites=true&w=majority';
+
+mongoose.connect(cadena,{useNewUrlParser:true, useUnifiedTopology:true})
+    .then(()=>{
+        console.log('Conexión realizada :)');
+    })
+    .catch(err=> console.log(err));
+
+
+    //Arrancar servidor
+    app.listen(port,()=>{
+        console.log('Escuchando el puerto 3000');
+    });
