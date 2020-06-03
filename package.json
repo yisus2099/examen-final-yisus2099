@@ -1,0 +1,22 @@
+{
+  "name": "examen-final-yisus2099",
+  "version": "1.0.0",
+  "description": "Examen final de tercer parcial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yisus2099/examen-final-yisus2099.git"
+  },
+  "author": "Jesús Alejandro Torres Ramírez 4E",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yisus2099/examen-final-yisus2099/issues"
+  },
+  "homepage": "https://github.com/yisus2099/examen-final-yisus2099#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
