@@ -1,5 +1,35 @@
 {{> header}}
 {{> navbar}}
- <h1>Prueba</h1>
+ <div class="container">
+    <h1>Pintores</h1>
+  
+    {{#if pintores}}
+    <table class="table table-dark table-hover"></table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Nacionalida</td>
+                <td>Corriente</td>
+                <td>Imagen</td>
+            </tr>
+        </thead>
+<tbody>
+    <tr>
+<td>Id</td>
+                <td>{{_id}}</td>
+                <td>{{nombre}}</td>
+                <td>{{nacionalidad}}</td>
+                <td>{{corriente}}</td>
+                <td>{{pintura}}</td>
+
+    </tr>
+</tbody>
+
+    {{else}}
+        <div>No se encuentran pintores</div>
+    {{/if}}
+
+ </div>
 
  {{> footer}}
