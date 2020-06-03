@@ -15,8 +15,9 @@
             </tr>
         </thead>
 <tbody>
+    {{#each pintores}}
     <tr>
-<td>Id</td>
+            <td>Id</td>
                 <td>{{_id}}</td>
                 <td>{{nombre}}</td>
                 <td>{{nacionalidad}}</td>
@@ -24,6 +25,7 @@
                 <td>{{pintura}}</td>
 
     </tr>
+    {{/each}}
 </tbody>
 
     {{else}}
