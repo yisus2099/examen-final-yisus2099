@@ -5,27 +5,24 @@ let Schema = mongoose.Schema;
 
 //Colección
 let PintoresSchema = new Schema({
-    _id:{
+    nombre:{
         type: String,
-        
-    },
-   nombre:{
-        type: String,
-       
-    },
-    nacionalidad:{
-        type: String,
-       
+        required: [true,'Requerimos el nombre']
     },
     corriente:{
         type: String,
-        
+        required: [true,'Requerimos la corriente']
+    },
+    nacionalidad:{
+        type: String 
     },
     pintura:{
+        type: String
+    },
+    nompin:{
         type: String,
-        
+        required: [true,'Requerimos el nombre de la pintura']
     }
-    
 });
-
+ 
 module.exports = mongoose.model('Pintores', PintoresSchema);

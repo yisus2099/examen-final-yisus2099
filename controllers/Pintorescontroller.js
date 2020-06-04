@@ -1,26 +1,25 @@
 let mongoose = require('mongoose');
 //Unir al modelo
-let Pintores = require('../models/pintores');
+let Pintores = require('../models/Pintores');
 
-
-let pintoresController = {};
+let PintoresController = {};
 
 /* Find */
 
-pintoresController.list = (req, res)=>{
+PintoresController.list = (req, res)=>{
     Pintores.find({})
     .limit(20)
     .skip(0)
-    .exec((err, pintor)=>{
+    .exec((err,pintor)=>{
         if(err){
-            console.log('Error: ', err);
+            console.log('Error: ',err);
         }
         res.render('../views/index',{
             pintores: pintor,
-            titulo: "Listado de pintores",
-            year: new Date().getFullYear()
-        });
+            title: "Listado De Pintores",
+            year: new Date().getDate()
+        })
     })
-};       
 
-module.exports = pintoresController;
+};
+module.exports = PintoresController;
