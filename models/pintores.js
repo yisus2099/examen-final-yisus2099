@@ -19,9 +19,8 @@ let PintoresSchema = new Schema({
     pintura:{
         type: String
     },
-    nompin:{
+    imagen:{
         type: String,
-        required: [true,'Requerimos el nombre de la pintura']
     }
 });
  
