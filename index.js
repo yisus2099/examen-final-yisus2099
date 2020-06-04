@@ -19,7 +19,7 @@ app.use('/', pintoresRouter);
 
 //Conexion con MongoDB
 mongoose.Promise = global.Promise;
-const cadena = 'mongodb+srv://theBatman_2020:batinson@torresjesus-qflpq.mongodb.net/<dbname>?retryWrites=true&w=majority';
+const cadena = 'mongodb+srv://theBatman_2020:batinson@torresjesus-qflpq.mongodb.net/paint?retryWrites=true&w=majority';
 
 mongoose.connect(cadena,{useNewUrlParser:true, useUnifiedTopology:true})
     .then(()=>{
