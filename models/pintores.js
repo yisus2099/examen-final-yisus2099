@@ -5,21 +5,25 @@ let Schema = mongoose.Schema;
 
 //Colección
 let PintoresSchema = new Schema({
-    name:{
+    _id:{
         type: String,
-        required: [true, 'Requerimos el nombre']
+        
     },
-    corriente:{
+   nombre:{
         type: String,
-        required:[true, 'Requerimos la corriente']
+       
     },
     nacionalidad:{
         type: String,
-        required:[true, 'Requerimos la corriente']
+       
+    },
+    corriente:{
+        type: String,
+        
     },
     pintura:{
         type: String,
-        required:[true, 'Requerimos la corriente']
+        
     }
     
 });
